@@ -15,7 +15,7 @@ def cnn_model_fn(features, labels, mode):
   # Capa de entrada
   input_layer = tf.reshape(features, [-1, 28, 28, 1])
 
-  # Capa de Convolucion 1
+  # Capa de Convolucion #1
   conv1 = tf.layers.conv2d(
       inputs=input_layer,
       filters=32,
